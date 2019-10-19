@@ -377,31 +377,23 @@
 
 
   
-  <section id="comments" class="comments">
-    <style>
-    .comments{margin:30px;padding:10px;background:#fff}
-    @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
-    </style>
-    <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+    
+<div id="comment"></div>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 <script>
-   var notify = 'false' == true ? true : false;
-   var verify = 'false' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "6KWm573BFIT6fWXkiMby38Xv-gzGzoHsz",
-            app_key: "IhNqhlivwsr57MBRtzaJdips",
-            placeholder: "Just go go",
-            avatar:"mm"
-        });
-    }
+new Valine({
+    el: '#comment' ,
+    notify:false, 
+    verify:false, 
+    appId: '6KWm573BFIT6fWXkiMby38Xv-gzGzoHsz',
+    appKey: 'IhNqhlivwsr57MBRtzaJdips',
+    placeholder: 'ヾﾉ≧∀≦)o欢迎评论!',
+    path:window.location.pathname, 
+    avatar:'mm' 
+});
 </script>
-  </section>
-  
+    
   
 
 
