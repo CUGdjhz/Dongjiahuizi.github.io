@@ -169,6 +169,19 @@
     </h1>
   
 
+
+        <!--显示阅读次数-->
+        
+          <br/>
+          <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+          <span class="icon-sort"></span>
+          <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+                    阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+          </span>
+          </a>
+        
+        <!--显示阅读次数完毕-->
+
         
         <a href="/2019/07/17/2019-7-17-前端总结/" class="archive-article-date">
   	<time datetime="2019-07-16T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-17</time>
@@ -326,7 +339,6 @@
   </div>
 </article>
 
-
   
 <nav id="article-nav">
   
@@ -388,31 +400,34 @@
   
 
   
-
-
   
-
-    
-<div id="comment"></div>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  
+  <section id="comments" class="comments">
+    <style>
+    .comments{margin:30px;padding:10px;background:#fff}
+    @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+    </style>
+    <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 <script>
-new Valine({
-    el: '#comment' ,
-    notify:false, 
-    verify:false, 
-    appId: '6KWm573BFIT6fWXkiMby38Xv-gzGzoHsz',
-    appKey: 'IhNqhlivwsr57MBRtzaJdips',
-    placeholder: 'ヾﾉ≧∀≦)o欢迎评论!',
-    path:window.location.pathname, 
-    avatar:'mm' 
-});
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "6KWm573BFIT6fWXkiMby38Xv-gzGzoHsz",
+            app_key: "IhNqhlivwsr57MBRtzaJdips",
+            placeholder: "Just go go",
+            avatar:"mm"
+        });
+    }
 </script>
-    
+  </section>
   
-
-
-
-
+  
 
 
           </div>
