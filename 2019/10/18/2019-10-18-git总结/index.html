@@ -384,8 +384,8 @@
         el: '#vcomment',
         notify: notify,
         app_id: "6KWm573BFIT6fWXkiMby38Xv-gzGzoHsz",
-        app_key: "6KWm573BFIT6fWXkiMby38Xv-gzGzoHsz",
-        placeholder: "Just go go",
+        app_key: "IhNqhlivwsr57MBRtzaJdips",
+        placeholder: "please write down your comments here....",
         avatar:"mm",
     });
 </script>
@@ -419,7 +419,7 @@
     $html.onclick = function(e) {
         var click_cnt = Math.round(Math.random()*10);
         var $elem = document.createElement("b");
-        $elem.style.color = "#FF3E96";
+        $elem.style.color = "#ff7eae";
         $elem.style.zIndex = 9999;
         $elem.style.position = "absolute";
         $elem.style.select = "none";
@@ -428,7 +428,7 @@
         $elem.style.left = (x - 10) + "px";
         $elem.style.top = (y - 20) + "px";
         clearInterval(anim);
-        var emoji = new Array("❤","慧子","sweetie","♡","☆","★","♡","♪","♬","sweetie","慧子");
+        var emoji = new Array("❤","慧子","sweetie","❤","❤","sweetie","慧子","♪","♬","sweetie","慧子");
         $elem.innerText = emoji[click_cnt];
         $elem.style.fontSize = 20 + "px";
         var increase = 0;
@@ -448,10 +448,10 @@
 };
 </script>
 
-# PV方式，单个用户连续点击 n 篇，记录 n 次记录值
+
 <span id="busuanzi_container_site_pv">    本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 
-# UV方式，单个用户连续点击 n 篇，记录 1 次记录值
+
 <span id="busuanzi_container_site_uv">  本站访客数<span id="busuanzi_value_site_uv"></span>人次</span>
   
 
